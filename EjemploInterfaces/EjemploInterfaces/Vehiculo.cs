@@ -8,45 +8,52 @@ namespace EjemploInterfaces
 {
     class Vehiculo
     {
-        private double velocidad;
-        private string marca;
-        private string modelo;
+        //Forma abreviada de declarar los atributos + los gets y los sets
+        public string Marca { get ; set; }
+        public string Modelo{ get; set; }
+        public Double Velocidad{ get; set; }
 
         public Vehiculo(double velocidad, string marca, string modelo)
         {
-            this.velocidad = velocidad;
-            this.marca = marca;
-            this.modelo = modelo;
+            Velocidad = velocidad;
+            Marca = marca;
+            Modelo = modelo;
         }
 
-        public void SetVelocidad(double velocidad)
-        {
-            this.velocidad = velocidad;
-        }
+        //Forma larga de declarar los gets y los sets y los atributos
 
-        public double GetVelocidad()
-        {
-            return velocidad;
-        }
+        //private string marca;
+        //private string modelo;
+        //private double velocidad;
 
-        public string GetMarca()
-        {
-            return marca;
-        }
+        //public void SetVelocidad(double velocidad)
+        //{
+        //    this.velocidad = velocidad;
+        //}
 
-        public void SetMarca(string marca)
-        {
-            this.marca = marca;
-        }
+        //public double GetVelocidad()
+        //{
+        //    return velocidad;
+        //}
 
-        public string GetModelo()
-        {
-            return modelo;
-        }
+        //public string GetMarca()
+        //{
+        //    return marca;
+        //}
 
-        public void SetModelo(string modelo)
-        {
-            this.modelo = modelo;
-        }
+        //public void SetMarca(string marca)
+        //{
+        //    this.marca = marca;
+        //}
+
+        //public string GetModelo()
+        //{
+        //    return modelo;
+        //}
+
+        //public void SetModelo(string modelo)
+        //{
+        //    this.modelo = modelo;
+        //}
     }
 }
